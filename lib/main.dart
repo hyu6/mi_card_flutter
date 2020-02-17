@@ -16,17 +16,27 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: <Widget>[
               CircleAvatar(
-                radius: 50,
+                radius: 50.0,
                 backgroundColor: Colors.white,
                 backgroundImage: AssetImage('images/hy.png'),
               ),
               Text(
                 'Haoran Yu',
                 style: TextStyle(
-                    fontSize: 40,
+                    fontFamily: 'Pacifico',
+                    fontSize: 40.0,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 20.0,
+                    color: Colors.teal.shade100,
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold),
+              )
             ],
           ),
         ),
