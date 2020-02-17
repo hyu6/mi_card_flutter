@@ -11,15 +11,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            color: Colors.white,
-            height: 100.0,
-            width: 100.0,
-            margin: EdgeInsets.symmetric(vertical: 50, horizontal: 20),
-            padding: EdgeInsets.all(10),
-            child: Text("Hello"),
+          child: Column(
+            children: <Widget>[
+              CircleAvatar(
+                radius: 50,
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage('images/hy.png'),
+              ),
+              Text(
+                'Haoran Yu',
+                style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
           ),
         ),
       ),
